@@ -1,0 +1,13 @@
+{% with messages = get_flashed_messages(with_categories=true) %}
+{% if messages %}
+{% for category, message in messages %}
+{% if category == 'reg-success' %}
+<script>
+	console.log('hello')
+	document.getElementById('reg-modal').style.display="block";
+	document.getElementById('reg-modal').className="modal show"; 
+</script>
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endwith %}

@@ -1,0 +1,14 @@
+{% with messages = get_flashed_messages(with_categories=true) %}
+{% if messages %}
+{% for category, message in messages %}
+{% if category == 'login-success' %}
+<div class="alert green white-text alert-dismissible fade show mb-3" style="position: relative; top: 0; z-index: 5; right: 3px; margin-top: 2.5px; width: 31%; text-align: left; margin-left: 68%" role="alert">
+	<strong>{{message}}</strong> Welcome back.
+	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		<span aria-hidden="true">&times;</span>
+	</button>
+</div>
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endwith %}

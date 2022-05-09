@@ -1,6 +1,5 @@
 from mongoengine import *
 from datetime import datetime
-from numpy import unique
 from App import db
 
 class User(Document):

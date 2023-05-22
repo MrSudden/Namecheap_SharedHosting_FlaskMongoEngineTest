@@ -6,7 +6,7 @@ Flask-Mail==0.9.1
 Flask-Migrate==4.0.4
 flask-mongoengine==1.0.0
 Flask-Principal==0.4.0
-Flask-RESTful==0.3.8
+Flask-RESTful==0.3.10
 Flask-Script==2.0.6
 Flask-Security==3.0.0
 Flask-SQLAlchemy==2.5.1
